@@ -42,7 +42,7 @@ import json
 
 from difflib import get_close_matches
 
-data=json.load(open("App#1/data.json"))
+data=json.load(open("data.json"))
 
 def searchWord(w):
     #w=w.lower()
@@ -70,6 +70,7 @@ def searchWord(w):
                     c=input("Type'Y' or 'N'. Type 'End' to stop the program: " )
                     if c.lower()=="end":
                         return "Program ended, plese try next time"
+                        
                                
     else: 
         return "Sorry...Word not found"
